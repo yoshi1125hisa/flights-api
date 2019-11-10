@@ -1,10 +1,12 @@
-class Request {
+const fetch = require("node-fetch");
+
+module.exports = class Request {
     constructor(url) {
         this.BASE_URL = url;
     }
 
     async get(uri) {
-        const requestURL = this.BASE_URL + uri + '?acl:consumerKey=e4e94d49da4866b76b2fc33016e7a3f792e459762199754561eb2b788fda68ee';
+        const requestURL = this.BASE_URL + uri + '&acl:consumerKey=e4e94d49da4866b76b2fc33016e7a3f792e459762199754561eb2b788fda68ee';
         const result = await fetch(requestURL, {
             headers: {
                 'Content-Type': 'application/json'
