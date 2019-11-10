@@ -1,1 +1,1 @@
-const getDepartureFlights = require('./module/departureFlights');
+const getDepartureFlights = require('./module/FlightSchedule');

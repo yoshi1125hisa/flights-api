@@ -2,7 +2,8 @@ const Request = require('../lib/request');
 
 const request = new Request('https://api-tokyochallenge.odpt.org/api/v4');
 let originAirport, destinationAirport;
-// 出発便
+
+// HND離発着便
 const getDepartureFlights = async () => {
     let flightData;
     try {
