@@ -1,0 +1,29 @@
+{
+  "name": "odpt2019-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "nodemon": "nodemon --exec babel-node src/app.js",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoshi1125hisa/odpt2019-server.git"
+  },
+  "author": "yoshi1125hisa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoshi1125hisa/odpt2019-server/issues"
+  },
+  "homepage": "https://github.com/yoshi1125hisa/odpt2019-server#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.4",
+    "@babel/node": "7.5.0",
+    "@babel/preset-env": "7.5.4",
+    "nodemon": "1.19.1"
+  }
+}
