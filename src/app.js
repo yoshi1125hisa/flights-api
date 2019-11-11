@@ -1,1 +1,1 @@
-const Departure = require('./lib/Flights');
+const Flights = require('./lib/Flights');

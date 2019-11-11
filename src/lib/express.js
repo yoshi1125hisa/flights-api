@@ -15,6 +15,9 @@ module.exports = requests => {
         res.send('pong')
     );
     app.get('/v1/departure', (req, res) =>
+        res.send(requests),
+    );
+    app.get('/v1/arrival', (req, res) =>
         res.send(requests)
     );
     app.listen(app.get('port'), function () {

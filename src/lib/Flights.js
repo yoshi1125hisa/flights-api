@@ -44,6 +44,7 @@ const getDeparture = async () => {
         }
         // console.log(departureFlights);
         express(departureFlights);
+        // return departureFlights;
     } catch (e) {
         console.log('取得できませんでした');
         console.log(e);
