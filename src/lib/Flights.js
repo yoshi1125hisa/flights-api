@@ -1,5 +1,5 @@
-const Request = require('../lib/request');
-const express = require('../lib/express.js')
+const Request = require('./FetchWrap');
+const express = require('./Express');
 
 const request = new Request('https://api-tokyochallenge.odpt.org/api/v4');
 let departureFlights = []

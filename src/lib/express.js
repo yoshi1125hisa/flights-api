@@ -1,12 +1,19 @@
 const express = require('express');
 const cors = require('cors')
 const app = express();
+const bodyParser = require('body-parser');
 
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 3000));
 app.use(cors())
 
 module.exports = requests => {
-    // ルート（http://localhost/）にアクセスしてきたときに「Hello」を返す
+    app.get('/', (req, res) =>
+        res.send('pong')
+    );
     app.get('/v1/departure', (req, res) =>
         res.send(requests)
     );
@@ -14,4 +21,3 @@ module.exports = requests => {
         console.log("Node app is running at localhost:" + app.get('port'))
     });
 }
-
