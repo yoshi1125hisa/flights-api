@@ -4,7 +4,7 @@ const express = require('../lib/express.js')
 const request = new Request('https://api-tokyochallenge.odpt.org/api/v4');
 let departureFlights = []
 
-const getDepartureFlights = async () => {
+const getDeparture = async () => {
     try {
         let flightData = await request.get('/odpt:FlightSchedule?odpt:operator=odpt.Operator:HND-JAT');
         // console.log(flightData);
@@ -51,4 +51,4 @@ const getDepartureFlights = async () => {
     }
 }
 
-getDepartureFlights();
+getDeparture();
