@@ -1,5 +1,8 @@
 const express = require('express');
+const cors = require('cors')
 const app = express();
+
+app.use(cors())
 
 module.exports = requests => {
     // ルート（http://localhost/）にアクセスしてきたときに「Hello」を返す

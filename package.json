@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/yoshi1125hisa/odpt2019-server#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
     "request": "^2.88.0"
