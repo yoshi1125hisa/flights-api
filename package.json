@@ -2,12 +2,12 @@
   "name": "odpt2019-server",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "",
   "scripts": {
-    "start": "node src/app",
+    "start": "node src/app.js",
     "nodemon": "nodemon --exec babel-node src/app.js",
-    "build": "babel src --out-dir dest",
-    "boot": "node dest/app.js"
+    "__build__": "babel src --out-dir dest",
+    "__boot__": "node dest/app.js"
   },
   "repository": {
     "type": "git",
