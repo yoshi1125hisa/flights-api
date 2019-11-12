@@ -1,1 +1,1 @@
-web: node src/app
+web: babel src --out-dir dest; node dest/app.js
