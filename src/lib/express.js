@@ -1,12 +1,6 @@
 const express = require('express');
 const cors = require('cors')
 const app = express();
-const bodyParser = require('body-parser');
-
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 3000));
 app.use(cors())
 
@@ -17,8 +11,7 @@ module.exports = requests => {
     app.get('/v1/flights', (req, res) =>
         res.send(requests),
     );
+    app.listen(app.get('port'), function () {
+        console.log("Node app is running at localhost:" + app.get('port'))
+    });
 }
-
-app.listen(app.get('port'), function () {
-    console.log("Node app is running at localhost:" + app.get('port'))
-});
