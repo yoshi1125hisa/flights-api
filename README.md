@@ -22,3 +22,15 @@ $ npm i
 ```
 $ npm run start
 ```
+
+### deploy for App Engine
+
+```
+$ gcloud app deploy
+```
+
+#### browse
+
+```
+$ gcloud app browse
+```
