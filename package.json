@@ -7,7 +7,8 @@
     "start": "node src/app.js",
     "nodemon": "nodemon --exec babel-node src/app.js",
     "build": "babel src --out-dir dest",
-    "boot": "node dest/app.js"
+    "boot": "node dest/app.js",
+    "deploy": "gcloud app deploy"
   },
   "repository": {
     "type": "git",

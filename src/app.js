@@ -35,9 +35,13 @@ const getFlights = async () => {
             ) {
                 let flightScheduleObj = flightData[i]['odpt:flightScheduleObject']
                 for (let j = 0; j < flightScheduleObj.length; j++) {
+                    let airline = flightScheduleObj[j]['odpt:airline'].slice(14);
+                    let flightNum = flightScheduleObj[j]['odpt:flightNumber'][0];
                     let originTime = flightScheduleObj[j]['odpt:originTime'];
                     let destinationTime = flightScheduleObj[j]['odpt:destinationTime'];
                     flights.push({
+                        "airline": airline,
+                        "flight_number": flightNum,
                         "origin_airport": originAirport,
                         "destination_airport": destinationAirport,
                         "origin_time": originTime,
