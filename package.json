@@ -36,7 +36,7 @@
     "@babel/core": "7.5.4",
     "@babel/node": "7.5.0",
     "@babel/preset-env": "7.5.4",
-    "nodemon": "^1.19.4",
+    "nodemon": "1.19.4",
     "@babel/cli": "7.5.0",
     "@babel/register": "7.4.4",
     "cz-customizable": "6.2.0"
