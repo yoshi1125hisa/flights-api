@@ -1,8 +1,8 @@
 {
   "name": "odpt2019-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "",
+  "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
     "nodemon": "nodemon --exec babel-node src/app.js",
