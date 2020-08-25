@@ -39,7 +39,7 @@
     "nodemon": "^1.19.4",
     "@babel/cli": "7.5.0",
     "@babel/register": "7.4.4",
-    "cz-customizable": "6.2.0"
+    "cz-customizable": "6.3.0"
   },
   "engines": {
     "node": "10.x"
